@@ -44,7 +44,7 @@ const quote = ref(null)
 
 const quoteChars = computed(() => {
   if (!quote.value) return []
-  return ('"' + quote.value.text + '"').split('')
+  return ('"' + quote.value.text + '"').replace(/ /g, '\u00A0').split('')
 })
 
 function pickQuote() {
