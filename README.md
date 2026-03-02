@@ -11,6 +11,9 @@
     <a href="https://github.com/NJUIS-Students/NJUIS-Students.github.io/actions/workflows/deploy.yml">
       <img src="https://img.shields.io/github/actions/workflow/status/NJUIS-Students/NJUIS-Students.github.io/deploy.yml?style=for-the-badge&label=Deploy" alt="deploy" />
     </a>
+    <a href="https://github.com/NJUIS-Students/NJUIS-Students.github.io/stargazers">
+      <img src="https://img.shields.io/github/stars/NJUIS-Students/NJUIS-Students.github.io?style=for-the-badge&logo=github&label=Stars&color=f59e0b" alt="stars" />
+    </a>
     <img src="https://img.shields.io/badge/VitePress-2.0-blue?style=for-the-badge&logo=vite" alt="vitepress" />
     <img src="https://img.shields.io/badge/Docs-Community%20Driven-16a34a?style=for-the-badge" alt="community" />
   </p>
@@ -23,6 +26,7 @@
 | 模块 | 说明 | 入口 |
 | --- | --- | --- |
 | 博客内容 | 学习经验、课程总结、方向入门 | [`docs/`](./docs) |
+| 文档首页 | VitePress 首页配置与展示文案 | [`docs/index.md`](./docs/index.md) |
 | 本地开发 | 快速启动文档站点 | `npm run docs:dev` |
 
 ## 为什么这个仓库值得 Star
@@ -45,38 +49,6 @@ npm run docs:build
 
 # 4) 本地预览构建结果
 npm run docs:preview
-```
-
-## 前端风格代码
-
-下面这段是适合放在页面中的“霓虹按钮”示例，便于你继续打造统一视觉风格：
-
-```html
-<button class="neo-btn">Explore NJUIS Wiki</button>
-
-<style>
-  .neo-btn {
-    padding: 12px 24px;
-    border: 0;
-    border-radius: 999px;
-    color: #ffffff;
-    font-weight: 700;
-    letter-spacing: 0.4px;
-    background: linear-gradient(135deg, #0ea5e9 0%, #22c55e 100%);
-    box-shadow:
-      0 10px 24px rgba(14, 165, 233, 0.35),
-      inset 0 1px 0 rgba(255, 255, 255, 0.35);
-    transition: transform 0.18s ease, box-shadow 0.18s ease;
-    cursor: pointer;
-  }
-
-  .neo-btn:hover {
-    transform: translateY(-2px);
-    box-shadow:
-      0 16px 28px rgba(34, 197, 94, 0.35),
-      0 0 0 3px rgba(14, 165, 233, 0.22);
-  }
-</style>
 ```
 
 ## 推荐贡献流程
