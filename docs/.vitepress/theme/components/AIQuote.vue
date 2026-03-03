@@ -65,6 +65,7 @@ watch(() => route.path, pickQuote)
   justify-content: center;
   gap: 0.5rem;
   padding: 0.6rem 1.2rem;
+  margin-bottom: 0.7rem;
   background: linear-gradient(90deg, rgba(0,229,255,0.04), rgba(124,77,255,0.06), rgba(0,229,255,0.04));
   border-bottom: 1px solid rgba(0,229,255,0.08);
   font-size: 0.78rem;

@@ -23,6 +23,13 @@
   --vp-home-hero-image-background-image: linear-gradient(135deg, rgba(0, 229, 255, 0.3) 0%, rgba(179, 136, 255, 0.25) 50%, rgba(0, 229, 255, 0.2) 100%);
 }
 
+/* ===== 文档标题间距微调 ===== */
+/* 仅收紧一级标题后紧跟二级标题的距离，避免影响其他章节层级节奏 */
+.vp-doc > div > h1 + h2 {
+  margin-top: 1.35rem;
+  padding-top: 0.8rem;
+}
+
 /* ===== Hero 区域 ===== */
 
 /* 标题 - 逐字颜色波浪（JS 拆字后生效） */
@@ -71,6 +78,15 @@
 /* 按钮区域 */
 .VPHero .actions {
   animation: cyber-text-in 1s ease-out 0.7s both;
+  align-items: center;
+  gap: 0.62rem;
+}
+
+.VPHero .actions .VPButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.15;
 }
 
 /* 副标题持续辉光脉冲 */
@@ -184,6 +200,29 @@
     0 0 30px rgba(0, 229, 255, 0.6),
     0 0 80px rgba(0, 229, 255, 0.2),
     0 12px 40px -8px rgba(124, 77, 255, 0.6);
+}
+
+/* 首页第一个主按钮（启动探索）强化可点击感 */
+.VPHero .actions .action:first-child .VPButton.brand {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 0.66rem 1.3rem;
+  min-width: 10.8rem;
+  min-height: 2.88rem;
+  box-shadow:
+    0 0 12px rgba(0, 229, 255, 0.3),
+    0 0 28px rgba(0, 229, 255, 0.09),
+    0 8px 22px -8px rgba(124, 77, 255, 0.34);
+}
+
+.VPHero .actions .action:not(:first-child) .VPButton {
+  min-width: 0;
+  min-height: 2.52rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.46rem 0.88rem;
+  line-height: 1.1;
 }
 
 /* Alt 按钮 - 科技边框 */
@@ -963,6 +1002,28 @@
 }
 
 @media (max-width: 680px) {
+  .VPHero .actions {
+    gap: 0.46rem;
+  }
+
+  .VPHero .actions .VPButton {
+    min-height: 0;
+  }
+
+  .VPHero .actions .action:first-child .VPButton.brand {
+    font-size: 0.9rem;
+    padding: 0.56rem 0.98rem;
+    min-width: 9.4rem;
+    min-height: 2.56rem;
+  }
+
+  .VPHero .actions .action:not(:first-child) .VPButton {
+    min-width: 0;
+    min-height: 2.24rem;
+    font-size: 0.8rem;
+    padding: 0.38rem 0.68rem;
+  }
+
   .vp-doc .course-card__shell {
     padding: 1.08rem;
     border-radius: 28px;
